@@ -1,0 +1,26 @@
+Your Title Here
+Author Name Here
+
+_ Section Title
+
+_ _ Subsection Title
+
+First paragraph stuff goes here.
+
+Leave a blank line to mark the next new paragraph.
+
+- first item in list
+- second item in list
+- third item in list
+
+_image This is the title of the image (title optional)
+graph1.png
+This is the image caption
+
+_ Remarks
+
+I should make the following remarks:
+
+- Text in the same paragraph should be on the same line. In TextWrangler, for example, you can change the view to enable soft text wrapping. Just click on View > Text Display > Soft Wrap Text.
+- Pay close attention to where blank lines are located.
+- Double line breaks are ignored. Line breaks within lists are ignored.

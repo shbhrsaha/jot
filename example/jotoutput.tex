@@ -1,0 +1,94 @@
+
+\documentclass[10pt,a4paper]{article}
+\usepackage{fancyhdr}
+\usepackage[headings]{fullpage}
+\usepackage{graphicx}
+\lhead{\rightmark}
+\rhead{\thepage}
+
+\usepackage{calc}
+
+\newlength{\imgwidth}
+
+\newcommand\scalegraphics[1]{%   
+    \settowidth{\imgwidth}{\includegraphics{#1}}%
+    \setlength{\imgwidth}{\minof{\imgwidth}{\textwidth - 75pt}}%
+    \includegraphics[width=\imgwidth]{#1}%
+}
+
+
+
+
+
+\title{Your Title Here}
+\author{Author Name Here}
+\setlength{\parindent}{0pt} 
+\setlength{\parskip}{2ex} 
+
+\begin{document}
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage 
+ 
+ 
+
+\section{Section Title}
+ 
+
+\subsection{Subsection Title} 
+ 
+
+First paragraph stuff goes here.
+ 
+
+Leave a blank line to mark the next new paragraph.
+ 
+
+\begin{itemize} 
+\item first item in list
+\item second item in list
+\item - first item in sublist
+\item - second item in sublist
+\item - - indented even more!
+\item - - indented even further
+\item third item in list
+\item - first item in sublist
+\item - - third degree list!
+\end{itemize} 
+
+1) This is how
+\begin{itemize} 
+\item - to create
+2) an ordered list
+\item 1) you might also want
+\item 2) numbers in here
+\end{itemize} 
+
+\section{Remarks}
+ 
+
+I should make the following remarks:
+ 
+
+\begin{itemize} 
+\item Text in the same paragraph should be on the same line. In TextWrangler, for example, you can change the view to enable soft text wrapping. Just click on View > Text Display > Soft Wrap Text.
+\item Pay close attention to where blank lines are located.
+\item Double line breaks are ignored. Line breaks within lists are ignored.
+\end{itemize} 
+
+
+		
+			\begin{figure}[h]
+			\begin{center}
+			\scalegraphics{graph1.png}
+			\caption{This is the image caption}
+			\end{center}
+			\label{fig:graph1.png}
+			\end{figure}
+		
+		This is the image caption
+
+ \end{document}
